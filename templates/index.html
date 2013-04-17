@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    {% load static from staticfiles %}
+
+    <!-- CSS imports -->
+    <link rel="stylesheet" type="text/css" href="{% static "css/foundation.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/normalize.css" %}">
+
+    <!-- js imports -->
+    <script src="{% static "js/vender/custom.modernizr.js" %}"></script>
+    <script src="{% static "js/foundation.min.js" %}"></script>
+    <script type="text/javascript">
+        $(document).foundation();
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="row">
+    <div class="eight columns">
+        <h2>Eight Columns</h2>
+        <p>Lorem ipsum...</p>
+    </div>
+
+    <div class="four columns">
+        <h2>Four Columns</h2>
+        <p>Lorem ipsum...</p>
+    </div>
+</div>
+</body>
+</html>
